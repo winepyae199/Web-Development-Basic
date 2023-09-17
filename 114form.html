@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Elements</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .container {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      form {
+        width: 50%;
+        margin: 20px;
+      }
+      div {
+        margin: 10px;
+      }
+      input {
+        padding: 10px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        margin-left: 20px;
+        border-radius: 8px;
+        border: 1px solid rgb(31, 31, 224);
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100px;
+        height: 30%;
+        border: 1px solid rgb(48, 243, 9);
+        border-radius: 20px;
+      }
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        outline: none;
+      }
+      .form-control {
+        padding: 5px;
+        border: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/New folder/001test.html" method="post">
+        <fieldset>
+          <legend>Login Form</legend>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control"
+            name="username" placeholder="Your Username" autocomplete="off"
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              name="password"
+              placeholder="Your Password"
+            />
+          </div>
+          <div class="btn-div">
+            <input type="submit" value="Login" />
+            <input type="reset" value="Cancle" />
+          </div>
+          <div>
+            Gender
+            <input type="radio" name="gender" id="" checked />Male
+            <input type="radio" name="gender" id="" />Female
+          </div>
+          <div>
+            Skill
+            <input type="checkbox" name="" id="" checked />HTML
+            <input type="checkbox" name="" id="" />CSS
+            <input type="checkbox" name="" id="" />JAVA
+            <input type="checkbox" name="" id="" />PHP
+          </div>
+          <div>
+            <input type="hidden" name="id" value="5" />
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id=""
+              placeholder="How old are you?"
+              style="margin: 10px"
+              min="18"
+              max="35"
+            />
+          </div>
+          <div>
+            BOD
+            <input type="date" name="" id="" />
+          </div>
+          <div>Favourite Color <input type="color"name=" id="" /></div>
+          <div>
+            <input type="range" name="" id="" min="12" max="35" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- -->
